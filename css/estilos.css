@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/*-----RESET-----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+/*Quitar subrayado de links*/
+a { text-decoration: none;}
+/*Quitar viñeta de listas*/
+ul { list-style: none;}
+ol { list-style: none;}
+
+/*------FUENTE----------*/
+body {
+    font-family: "Sansation", sans-serif;}
+
+    h1 {
+        color: white;
+        font-size: 50px;}
+    h2 {
+        color: white;
+        font-size: 30px;}
+
+
+/*------HEADER----------*/
+
+/*Barra de navegación*/
+header {
+    height: 80px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;}
+header p {
+    color: white;
+    font-size: 30px;}
+header nav ul {
+    display: flex;}
+header nav ul li a {
+    color: blanchedalmond;
+    padding: 10px;}
+header nav ul li a:hover {
+    background-color: rgba(128, 128, 128, 0.515);}
+.logo {height: 80px;}
+
+
+/*-----FOOTER-----*/
+footer {
+    height: 100px;
+    background-image: url(../img/footer.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;} 
+footer a {
+    margin-top: 1rem;
+}
+footer i {
+    font-size: 50px;
+    color: white;
+    transition: 1s;}
+footer i:hover {
+    color: aqua;}
+
+/*---------INDEX---------*/
+
+/*Sección Hero*/
+.hero {
+    height: 100vh;
+    text-align: center;
+    background-image: url(../img/imagenHeroSection.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;}
+.hero h1{
+    background-color: rgba(0, 0, 0, 0.479);
+    padding: 20px;
+    margin-bottom: 0 !important;}
+.hero p {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;}
+
+/*Sección Tòpicos*/
+.topicos {
+    min-height: 650px;
+    background-image: url(../img/topicos-img.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;}
+.topicos h2 {
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+    box-shadow: inset 0 0 20px white;}
+.contenedor-general {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;}
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.tarjeta-concepto {
+    background-color: rgba(255, 255, 255, 0.255);
+    border: 2px solid white;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;}
+.tarjeta-concepto h3 { 
+    margin-bottom: 10px;
+    color: aqua;
+    font-size:25px;}
+.tarjeta-concepto p{ 
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px !important;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;}
+.tarjeta-concepto a {
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px;}
+
+/*Sección Casos*/
+.casos {
+    height: auto;
+    background: linear-gradient(to top, rgb(15, 15, 15),white);}
+.casos h2 {
+    background-color: gray;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 0 !important;
+    box-shadow: inset 0 0 20px white;}
+.contenedor-casos {
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;}
+.bloque-casos-catarsis {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center}
+.bloque-casos-catarsis h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.344);
+    width: 100%;
+    padding:25px;
+    margin-bottom: 2rem;}
+.carousel {
+    width: 100%;
+    margin-bottom: 30px;}
+.carousel-caption {
+    width: 100%;
+    left: 0;}
+.carousel h5 {
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.407);;
+    margin-bottom: 0;}
+.carousel p {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.407);}
+.boton {
+    display: inline-block !important;
+    margin-top: 1.5rem;}
+.boton a {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px; 
+    text-decoration: none; 
+    border-radius: 2px;
+    box-shadow: inset 0 0 4px white;
+    padding: 10px 15px 10px 15px;
+    transition: 1s;}
+.boton a:hover {
+    background-color: grey;}
+.contenedor-video {
+    box-shadow: inset 5px 5px 20px rgba(72, 72, 72, 0.949);
+    width: 40%;
+    height: 100%;}
+.video {
+    width: 100%;      
+    height: 100%;
+    padding: 20px;}
+
+/*------TOPICOS--------*/
+
+/*Sección Presentacion Tópicos*/
+.presentacion-topicos {
+    height: 100vh;
+    background-image: url(../img/topicos-portada-mente.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;}
+.presentacion-topicos h1 {
+    color: white;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.373);
+    padding: 40px;
+    margin-bottom: 20px;}
+.presentacion-topicos p {
+    color: white;
+    font-size: 30px;}
+
+/*Sección GRID*/
+.grid-contenedor {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    align-items: start;} 
+.lista {
+    position:sticky;
+    top: 80px;
+    background: white;
+    padding: 10px;
+    height: fit-content;}
+.descripcion {
+    display: grid;
+    grid-template-columns: repeat (auto-fill, minmax (200px,1fr));
+    gap: 20px;}
+
+/*Sección Lista de Tópicos*/
+#lista-topicos {
+    padding: 10px;}
+#lista-topicos h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.56);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;}
+#lista-topicos ol {
+    padding: 10px;
+    text-align: center;}
+#lista-topicos ol li {
+    margin: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: 2px solid gray;
+    background-color: rgba(0, 255, 255, 0.403);}
+#lista-topicos ol li a {
+    color: black;}
+
+/*Sección Descripción de Tópicos*/
+.descripcion-topicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;}
+.descripcion-topicos article {
+    padding: 20px;}
+.tarjeta-topico {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid grey;}
+.tarjeta-topico h3 {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.348);}
+.tarjeta-topico p {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 18px;}
+.tarjeta-topico img {
+    width: 80%;
+    max-height: 500px ;
+    align-self: center;}
+
+
+/*------CASOS--------*/
+
+/*Sección Portada Casos*/
+.portada-casos {
+    height: 100vh;
+    text-align: center;
+    background-image: url(../img/rostro.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;}
+.portada-casos h1 {
+    color: white;
+    font-size: 50px;
+    margin: 30px}
+.portada-casos p {
+    color: white;
+    font-size: 35px;}
+
+/*Sección Presentación Casos*/
+.presentacion-casos {
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: space-between;}
+.presentacion-casos h2 {
+    background-color: rgba(0, 0, 0, 0.488);
+    padding: 30px;
+    text-align: center;
+    border: 4px solid white;
+    margin-bottom: 0;}
+.bloques-videos {
+    height: 500px;
+    background-image: url(../img/otro.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.contenido-videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;}
+.presentacion-casos h3 {
+    font-size: 2em !important;
+    padding: 20px !important;
+    background-color: rgba(0, 255, 255, 0.374) !important;}
+.presentacion-casos p {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.videos-casos {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.475);
+    box-shadow: -5px -5px 20px rgb(68, 68, 68);}
+.videos-casos iframe {
+    height: 400px;}
+#testimonios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    height: 500px;
+    text-align: center;
+    border: 10px solid black;}
+#testimonios h2 { 
+    color: black;
+    padding: 30px;}
+#testimonios p {
+    font-size: 20px;}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 20px;}
+.formulario label {
+    font-size: 1.5rem;
+    text-decoration: solid;
+    margin: 10px;}
+#testimonio {
+    width: 80%;
+    height: 60px;
+    margin-bottom: 10px;}
+
+/*--------CONTACTO--------*/
+/*Sección Portada Contacto*/
+.portada-contacto {
+    height: 100vh;
+    background-image: url(../img/contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;}
+.portada-contacto h1 {
+    color: black;
+    margin-bottom: 200px;
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 50px;}
+.portada-contacto p {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.397);
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 35px;}
+
+/*Sección Contacto*/
+.contacto {
+    height: 400px;
+    text-align: center;}
+.contacto h2 {
+    color: black;
+    font-size: 30px;
+    padding: 40px;}
+.contacto form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;}
+.input {
+    height: 30px;
+    width: 80%;
+    border-color: aqua;}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;}
+.form-item label {
+    font-size: 1.5rem;}
+.form-item textarea {
+    height: 80px;
+    width: 600px;
+    font-size: 15px;}
+.contacto form div:nth-child(6){
+    width: 100px;
+    margin: 50px 280px;}
+
+
+
+/*Sección Ayuda*/
+.ayuda {
+    min-height: 800px;
+    background-image: url(../img/fondo-ayuda.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;}
+.ayuda h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.307);
+    padding: 50px;
+    text-align: center;}
+.ayuda p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;}
+.contenedor-tarjetas-psi {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+    border: 30px groove rgba(0, 0, 0, 0.545);}
+.tarjeta-psi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;}
+.tarjeta-psi h3 {
+    font-size: 25px;
+    margin: 10px;}
+.tarjeta-psi img {
+    margin: 10px;
+    border: 2px solid black;}
+.tarjeta-psi p {
+    font-size: 20px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;}
+.tarjeta-psi p img {
+    border: none;}
+
+/*--------CACERCA DE--------*/
+
+/*Sección Poratada Acerca De*/
+.portada-acerca-de {
+    height: 650px;
+    background-image: url(../img/acerca-de-img.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;}
+.portada-acerca-de h1 {
+    padding: 80px;}
+.portada-acerca-de p {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 5px;}
+.nosotros {
+    height: 400px;
+    text-align: center;
+    padding: 80px;}
+.nosotros h2 {
+    color: black;}
+.nosotros p {
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;}
