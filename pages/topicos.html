@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
     <!--Bootstrap Iconos-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <!--CSS-->
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css" />
     <title>Topicos</title>
 </head>
+
 <body>
     <header>
-        <img src="../img/logo.jpg" class="logo" alt="logo">
+        <img src="../img/logo.jpg" class="logo" alt="logo" />
         <p>PSICOTÓPICOS</p>
         <label for="menu-hamburguesa" class="menu-icon">☰</label>
         <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa-checkbox" />
@@ -30,207 +32,379 @@
     </header>
     <main>
         <section class="presentacion-topicos">
-            <h1>
-                Ponete cómodo/a, vamos a hablar de tu cabeza
-            </h1>
+            <h1>Ponete cómodo/a, vamos a hablar de tu cabeza</h1>
             <p>
-            En esta sección vamos a explorar una gran cantidad de tópicos psicológicos <br>que dan nombre a muchas de las experiencias que nos estructuran o nos atraviesan, <br> o nos hacen sufrir o nos limitan o todo eso junto.
+                En esta sección vamos a explorar una gran cantidad de tópicos
+                psicológicos <br />que dan nombre a muchas de las experiencias que nos
+                estructuran o nos atraviesan, <br />
+                o nos hacen sufrir o nos limitan o todo eso junto.
             </p>
         </section>
-        <section class="grid-contenedor">
-            <div id="lista-topicos" class="lista">
-                <h2>
-                    <strong>Tópicos de la A a la Z</strong>
-                </h2>
-                <form action="#ansiedad"method=GET>
-                    <input type="text" name="q" placeholder="Buscar..."><button type="submit">Buscar</button>
-                </form>
-                <ol>
-                    <li><a href="#ansiedad">Ansiedad</a></li>
-                    <li><a href="#bipolaridad">Bipolaridad</a></li>
-                    <li><a href="#culpa">Culpa</a></li>
-                    <li><a href="#depresion">Depresión</a></li>
-                    <li><a href="#esquizofrenia">Esquizofrenia</a></li>
-                    <li><a href="#fobia">Fobia</a></li>
-                    <li><a href="#gaslighting">Gaslighting</a></li>
-                    <li><a href="#hipocondria">Hipocondría</a></li>
-                    <li><a href="#inhibicion">Inhibición</a></li>
-                    <li><a href="#libido">Libido</a></li>
-                    <li><a href="#melancolia">Melancolía</a></li>
-                    <li><a href="#neurosis">Neurosis</a></li>
-                    <li><a href="#obsesion">Obsesión</a></li>
-                    <li><a href="#psicosis">Psicosis</a></li>
-                    <li><a href="#resiliencia">Resiliencia</a></li>
-                    <li><a href="#somatizacion">Somatización</a></li>
-                    <li><a href="#trauma">Trauma</a></li>
-                    <li><a href="#violencia">Violencia Psicológica</a></li>
-                </ol>
+        <section class="explorador-topicos">
+            <div class="dropdown-contenedor">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Tòpicos de la A a la Z
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#ansiedad">Ansiedad</a></li>
+                        <li><a class="dropdown-item" href="#bipolaridad">Bipolaridad</a></li>
+                        <li><a class="dropdown-item" href="#culpa">Culpa</a></li>
+                        <li><a class="dropdown-item" href="#depresion">Depresión</a></li>
+                        <li><a class="dropdown-item" href="#esquizofrenia">Esquizofrenia</a></li>
+                        <li><a class="dropdown-item" href="#fobia">Fobia</a></li>
+                        <li><a class="dropdown-item" href="#gaslighting">Gaslighting</a></li>
+                        <li><a class="dropdown-item" href="#hipocondria">Hipocondría</a></li>
+                        <li><a class="dropdown-item" href="#inhibicion">Inhibición</a></li>
+                        <li><a class="dropdown-item" href="#libido">Libido</a></li>
+                        <li><a class="dropdown-item" href="#melancolia">Melancolía</a></li>
+                        <li><a class="dropdown-item" href="#neurosis">Neurosis</a></li>
+                        <li><a class="dropdown-item" href="#obsesion">Obsesión</a></li>
+                        <li><a class="dropdown-item" href="#psicosis">Psicosis</a></li>
+                        <li><a class="dropdown-item" href="#resiliencia">Resiliencia</a></li>
+                        <li><a class="dropdown-item" href="#somatizacion">Somatización</a></li>
+                        <li><a class="dropdown-item" href="#trauma">Trauma</a></li>
+                        <li><a class="dropdown-item" href="#violencia">Violencia Psicológica</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="descripcion descripcion-topicos">
-                <article id="ansiedad" class="tarjeta-topico">
-                    <h3>
-                        Ansiedad
-                    </h3>
-                    <p>
-                        La ansiedad es como tener mil pensamientos corriendo a la vez en tu cabeza, pero ninguno tiene sentido. <br> Es como estar esperando algo malo que va a pasar, aunque en realidad no haya razón para que pase. <br> Tu corazón late rápido, sientes que te ahogas o que no puedes calmarte, y te pone todo nervioso o irritable. <br> Es como si estuvieras atrapado en una especie de "loop" mental, dándole vuelta a todo sin poder parar, aunque afuera no pase nada grave. <br> Básicamente, es esa sensación de que te vas a perder en un mar de preocupaciones y que no sabes cómo salir.
-                    </p>
-                    <img src="/img/ansiedad.jpg" alt="ilustracion-ansiedad">
-                </article>
-                <article id="bipolaridad" class="tarjeta-topico">
-                    <h3>
-                        Bipolaridad
-                    </h3>
-                    <p>
-                        La bipolaridad es como estar en una montaña rusa emocional, pero sin aviso. <br> Un momento estás on fire, súper feliz, lleno de energía, como si pudieras conquistar el mundo. <br> Pero en un abrir y cerrar de ojos, te bajas a un pozo donde todo te pesa, no tienes ganas de nada y te sientes vacío. <br> Es como si tus emociones cambiaran de extremo a extremo, sin control, y no es como si fuera un mal día o algo pasajero. <br> Puede durar días o semanas, y lo peor es que a veces ni tú sabes por qué pasó. Un minuto eres la persona más optimista, y al siguiente sientes que todo está en picada. <br> Es como estar atrapado en dos mundos totalmente diferentes, con la sensación de que el control se te escapa de las manos.
-                    </p>
-                    <img src="/img/bipolaridad.jpg" alt="ilustracion-bipolaridad">
-                </article>
-                <article id="culpa" class="tarjeta-topico">
-                    <h3>
-                        Culpa
-                    </h3>
-                    <p>
-                        Ese sentimiento incómodo o pesado que aparece cuando sentimos que hicimos algo mal, especialmente si creemos que lastimamos a alguien o no actuamos como "deberíamos". Es como una vocecita interna que te dice: "Eso no estuvo bien".La culpa está muy ligada a nuestra conciencia moral y a nuestras normas internas —lo que creemos que es correcto o incorrecto. Puede servir como guía para corregir errores y aprender, pero si se vuelve muy intensa o constante, también puede afectar nuestra salud mental.
-                    </p>
-                    <img src="/img/culpa.jpg" alt="ilustracion-culpa">
-                </article>
-                <article id="depresion" class="tarjeta-topico">
-                    <h3>
-                        Depresión
-                    </h3>
-                    <p>
-                        La depresión es como cuando todo te pesa, incluso cosas que antes te gustaban. Es sentirte apagado por dentro, como si te hubieran bajado el volumen emocional. No es solo estar triste un rato —es más como estar atrapado en una nube gris que no se va, sin importar lo que pase afuera. A veces no hay una razón clara, y otras veces sí, pero lo difícil es que te roba la energía, las ganas y hasta el sentido de las cosas. No es flojera ni drama: es una batalla interna que no siempre se nota desde fuera.
-                    </p>
-                    <img src="/img/depresion.jpg" alt="ilustracion-depresion">
-                </article>
-                <article id="esquizofrenia" class="tarjeta-topico">
-                    <h3>
-                        Esquizofrenia
-                    </h3>
-                    <p>
-                        La esquizofrenia es como si tu mente empezara a mezclar la realidad con cosas que no están ahí, y no te das cuenta de inmediato. Es como si tu cerebro sintonizara varios canales al mismo tiempo: algunos reales, otros inventados, y a veces no sabes cuál es cuál. Puede haber voces que nadie más escucha, ideas raras que se sienten muy reales, o una desconexión con lo que pasa a tu alrededor.No es tener "doble personalidad", como muchos piensan, y no significa que alguien sea violento o peligroso. Es más bien una condición mental compleja que afecta cómo una persona piensa, siente y percibe el mundo.
-                    </p>
-                    <img src="/img/esquizofrenia.jpg" alt="ilustracion-esquizofrenia">
-                </article>
-                <article id="fobia" class="tarjeta-topico"> 
-                    <h3>
-                        Fobia
-                    </h3>
-                    <p>
-                        Una fobia es cuando algo en particular —que puede parecer inofensivo o normal para otros— te da un miedo exagerado, casi automático, que no puedes controlar. Es como si tu cuerpo entrara en modo pánico aunque tu cabeza sepa que no hay peligro real. No es solo "no me gusta" o "me incomoda", es más como: "¡sáquenme de aquí ya!" Puede ser a cosas, lugares, animales, situaciones… desde arañas hasta hablar en público o volar en avión. La mente reacciona como si fuera una amenaza enorme, aunque racionalmente sabes que no lo es. Pero no por eso se siente menos real.
-                    </p>
-                    <img src="/img/fobia.jpg" alt="ilustracion-fobia">
-                </article>
-                <article id="gaslighting" class="tarjeta-topico">
-                    <h3>
-                        Gaslighting
-                    </h3>
-                    <p>
-                        El gaslighting es cuando alguien te manipula para que empieces a dudar de ti mismo, de tus recuerdos, de lo que sentís o hasta de tu cordura. Es como si te dijeran cosas tipo “eso nunca pasó”, “estás exagerando” o “estás loco”, incluso cuando sabés que lo que viste o sentiste fue real. Es una forma sutil (o a veces no tan sutil) de hacerte sentir que el problema sos vos, cuando en realidad el otro te está torciendo la realidad. Puede pasar en relaciones de pareja, familia, trabajo… y lo peor es que muchas veces ni te das cuenta hasta que ya estás bastante metido.
-                    </p>
-                    <img src="/img/gaslighting.jpg" alt="ilustracion-gaslighting">
-                </article>
-                <article id="hipocondria" class="tarjeta-topico">
-                    <h3>
-                        Hipocondría
-                    </h3>
-                    <p>
-                        La hipocondría es cuando estás convencido de que tenés alguna enfermedad seria, aunque los médicos te digan que está todo bien. Sentís algo mínimo —un dolorcito, un síntoma raro, un bultito— y tu cabeza ya está imaginando el peor escenario: “Seguro es cáncer”, “me voy a morir”, “¿y si es algo grave y nadie lo nota?”. No es que la persona quiera llamar la atención ni que esté inventando cosas, realmente lo siente así. Es una ansiedad fuerte enfocada en la salud, y puede hacer que vivas en modo alerta constante, escaneándote el cuerpo o googleando síntomas a cada rato (lo cual, spoiler: solo lo empeora).
-                    </p>
-                    <img src="/img/hipocondria.jpg" alt="ilustracion-hipocondria">
-                </article>
-                <article id="inhibicion" class="tarjeta-topico">
-                    <h3>
-                        Inhibición
-                    </h3>
-                    <p>
-                        La inhibición es como tener un freno interno que no te deja hacer o decir lo que querés, aunque en el fondo tengas ganas. Es esa sensación de "mejor no hago nada, no vaya a ser que quede mal, me juzguen o meta la pata". Tu mente quiere avanzar, pero algo dentro tuyo dice "ni lo intentes". Puede pasar en situaciones sociales, sexuales, creativas… o básicamente en cualquier momento donde hay miedo al rechazo, al error o a exponerse. No es que no puedas, es que te bloqueás.
-                    </p>
-                    <img src="/img/inhibicion.jpg" alt="ilustracion-inhibicion">
-                </article>
-                <article id="libido" class="tarjeta-topico">
-                    <h3>
-                        Libido
-                    </h3>
-                    <p>
-                        La líbido es básicamente tu energía o deseo sexual. Es como el “combustible” del impulso erótico, esas ganas de conectar, de tocar, de jugar o simplemente de tener sexo. Puede estar por las nubes o más bien en modo avión, y eso depende de mil cosas: el cuerpo, la mente, el estrés, el vínculo con el otro, etc. Pero ojo, no es solo físico —también tiene que ver con la fantasía, lo emocional, lo hormonal, incluso lo creativo. Freud, por ejemplo, decía que la líbido era como la fuerza vital que movía casi todo lo que hacemos (no solo sexo).
-                    </p>
-                    <img src="/img/libido.jpg" alt="ilustracion-libido">
-                </article>
-                <article id="melancolia" class="tarjeta-topico">
-                    <h3>
-                        Melancolía
-                    </h3>
-                    <p>
-                        La melancolía es como esa sensación de estar atrapado en el pasado, mirando atrás y pensando en algo que ya se fue, ya sea un amor, un momento de tu vida o una experiencia que te marcó. Es como una tristeza profunda que te hace quedarte pegado a esos recuerdos, y muchas veces te hace sentir que todo lo bueno ya pasó. A veces, la melancolía te ayuda a pensar en tu vida y aprender de lo que has vivido, te ayuda a aceptar las cosas que ya no están. Pero si se vuelve algo constante, puede ser un problema. Es como si no pudieras dejar de darle vueltas a lo que ya no puedes cambiar, lo que te lleva a estar en un estado de tristeza que no se va. Eso hace que sea difícil disfrutar del presente, y te mete en un círculo de pensamientos que no te dejan avanzar.
-                    </p>
-                    <img src="/img/melancolia.jpg" alt="ilustracion-melancolia">
-                </article>
-                <article id="neurosis" class="tarjeta-topico">
-                    <h3>
-                        Neurosis
-                    </h3>
-                    <p>
-                        La neurosis es cuando alguien se siente constantemente preocupado, ansioso o estresado por cosas que no son tan graves, pero que para esa persona se sienten como un gran problema. Es como tener una mente que no puede parar de dar vueltas a lo mismo, de pensar en lo peor, de dudar de todo y de tener miedos que a veces no tienen mucho sentido, pero igual te afectan. No llega a ser algo tan serio como un trastorno mental grave, pero sí puede afectar tu bienestar diario, como estar siempre al borde de la angustia sin saber muy bien por qué. Es más como una lucha interna constante.
-                    </p>
-                    <img src="/img/neurosis.jpg" alt="ilustracion-neurosis">
-                </article>
-                <article id="obsesion" class="tarjeta-topico">
-                    <h3>
-                        Obsesión
-                    </h3>
-                    <p>
-                    La obsesión es cuando algo, ya sea un pensamiento, una idea o una acción, se te mete en la cabeza y no puedes dejar de darle vuelta. Es como si tu mente no pudiera apagar esa "musiquita" que se repite una y otra vez, sin importar cuánto intentes distraerte. A veces son ideas o miedos que no tienen mucho sentido, pero te ocupan el 100% de tu atención. Es como estar atrapado en una rueda de pensamientos que no se detiene, y aunque sabes que son irracionales, no puedes evitarlo.A veces las obsesiones se combinan con la necesidad de hacer cosas una y otra vez, de manera casi compulsiva, para "sentir que todo está bien" o para aliviar la ansiedad que esas obsesiones generan. Es como un ciclo en el que los pensamientos repetitivos (obsesiones) te llevan a realizar ciertos rituales o acciones (compulsiones), aunque muchas veces sabes que no tienen sentido.
-                    </p>
-                    <img src="/img/obsesion.jpg" alt="ilustracion-obsesion">
-                </article>
-                <article id="psicosis" class="tarjeta-topico">
-                    <h3>
-                        Psicosis
-                    </h3>
-                    <p>
-                        La psicosis es cuando alguien pierde el contacto con la realidad, como si su mente empieza a inventar o distorsionar cosas que no están pasando. Puede ser escuchar voces que no están ahí, ver cosas que no existen o tener ideas muy raras sobre el mundo o sobre uno mismo, que no tienen sentido para los demás. Es como si el cerebro estuviera funcionando en un "modo" diferente, y lo que la persona percibe o cree no se ajusta a lo que realmente está ocurriendo. No siempre es algo que se note de inmediato, porque las personas con psicosis pueden parecer normales en muchos momentos, pero la desconexión con la realidad es lo que marca la diferencia.
-                    </p>
-                    <img src="/img/psicosis.jpg" alt="ilustracion-psicosis">
-                </article>
-                <article id="resiliencia" class="tarjeta-topico">
-                    <h3>
-                        Resiliencia
-                    </h3>
-                    <p>
-                        La resiliencia es esa capacidad de levantarte después de una caída, de seguir adelante cuando las cosas se ponen duras. Es como tener un "superpoder" que te ayuda a enfrentar los problemas, las pérdidas o las dificultades sin quedarte estancado en ellos. No significa que no sientas el golpe, sino que sabes cómo adaptarte, aprender de lo que pasó y seguir tu camino, aunque sea paso a paso.Es como si la vida te diera un par de trompadas, pero tú encuentras la forma de salir con más fuerza, con más experiencia o simplemente con más paz interior. Es algo que todos tenemos, solo que a veces hay que "entrenarlo" para que salga en su mejor versión cuando más lo necesitas.
-                    </p>
-                    <img src="/img/resiliencia.jpg" alt="ilustracion-resiliencia">
-                </article>
-                <article id="somatizacion" class="tarjeta-topico">
-                    <h3>
-                        Somatización
-                    </h3>
-                    <p>
-                        La somatización es cuando tu cuerpo empieza a expresar el estrés, la ansiedad o las emociones difíciles que no puedes o no quieres manejar con palabras. Es como si, en lugar de lidiar con esos sentimientos de manera emocional o mental, tu cuerpo los tradujera en síntomas físicos. Por ejemplo, podrías tener dolores de cabeza, molestias estomacales o fatiga extrema, pero cuando te revisan, no hay una causa médica clara. Lo que está pasando realmente es que tu cuerpo está reaccionando a lo que pasa en tu mente. Es como si el cuerpo dijera: "Si no puedes manejar esto emocionalmente, entonces te lo voy a mostrar físicamente."
-                    </p>
-                    <img src="/img/somatizacion.jpg" alt="ilustracion-somatizacion">
-                </article>
-                <article id="trauma" class="tarjeta-topico">
-                    <h3>
-                        Trauma
-                    </h3>
-                    <p>
-                        El trauma es como una herida emocional profunda que queda después de vivir algo muy impactante o doloroso. Es cuando una experiencia muy fuerte, como un accidente, una pérdida importante, una agresión o algo que te sacudió profundamente, deja una marca en tu mente y emociones. Es como si el cerebro no pudiera "borrar" esa experiencia, y aunque pase el tiempo, ciertos recuerdos, sentimientos o situaciones pueden hacer que te vuelva esa sensación de malestar. A veces ni te das cuenta de lo mucho que afecta, hasta que te enfrentas a algo que te recuerda esa herida. El trauma puede afectar cómo ves el mundo, cómo te relacionas con los demás o incluso cómo te sientes contigo mismo.
-                    </p>
-                    <img src="/img/trauma.jpg" alt="ilustracion-trauma">
-                </article>
-                <article id="violencia" class="tarjeta-topico">
-                    <h3>
-                        Violencia Psicológica
-                    </h3>
-                    <p>
-                        La violencia psicológica es cuando alguien te manipula, te controla o te hace sentir mal de manera constante con palabras, actitudes o comportamientos que afectan tu mente y emociones. No se ve de inmediato como una agresión física, pero puede ser igual de dañina, o incluso más, porque te hace dudar de ti mismo, te mina la autoestima o te hace sentir que no vales. Es como si te estuvieran minando mentalmente todo el tiempo, con comentarios despectivos, amenazas, críticas destructivas o aislándote de las personas que te importan. A veces se camufla bajo la excusa de "es por tu bien" o "es que te quiero", pero la realidad es que te deja emocionalmente roto. Este tipo de violencia puede hacerte sentir inseguro, ansioso o incluso como si nunca pudieras hacer las cosas bien. Reconocerla es el primer paso para salir de una relación tóxica y buscar apoyo.
-                    </p>
-                    <img src="/img/violencia.jpg" alt="ilustracion-violencia">
-                </article>
+            <div class="grid-contenedor">
+                <div id="lista-topicos" class="lista">
+                    <h2>
+                        <strong>Tópicos de la A a la Z</strong>
+                    </h2>
+                    <form action="#ansiedad" method="GET">
+                        <input type="text" name="q" placeholder="Buscar..." /><button type="submit">
+                            Buscar
+                        </button>
+                    </form>
+                    <ol>
+                        <li><a href="#ansiedad">Ansiedad</a></li>
+                        <li><a href="#bipolaridad">Bipolaridad</a></li>
+                        <li><a href="#culpa">Culpa</a></li>
+                        <li><a href="#depresion">Depresión</a></li>
+                        <li><a href="#esquizofrenia">Esquizofrenia</a></li>
+                        <li><a href="#fobia">Fobia</a></li>
+                        <li><a href="#gaslighting">Gaslighting</a></li>
+                        <li><a href="#hipocondria">Hipocondría</a></li>
+                        <li><a href="#inhibicion">Inhibición</a></li>
+                        <li><a href="#libido">Libido</a></li>
+                        <li><a href="#melancolia">Melancolía</a></li>
+                        <li><a href="#neurosis">Neurosis</a></li>
+                        <li><a href="#obsesion">Obsesión</a></li>
+                        <li><a href="#psicosis">Psicosis</a></li>
+                        <li><a href="#resiliencia">Resiliencia</a></li>
+                        <li><a href="#somatizacion">Somatización</a></li>
+                        <li><a href="#trauma">Trauma</a></li>
+                        <li><a href="#violencia">Violencia Psicológica</a></li>
+                    </ol>
+                </div>
+                <div class="descripcion descripcion-topicos">
+                    <article id="ansiedad" class="tarjeta-topico">
+                        <h3>Ansiedad</h3>
+                        <p>
+                            La ansiedad es como tener mil pensamientos corriendo a la vez en
+                            tu cabeza, pero ninguno tiene sentido. <br />
+                            Es como estar esperando algo malo que va a pasar, aunque en
+                            realidad no haya razón para que pase. <br />
+                            Tu corazón late rápido, sientes que te ahogas o que no puedes
+                            calmarte, y te pone todo nervioso o irritable. <br />
+                            Es como si estuvieras atrapado en una especie de "loop" mental,
+                            dándole vuelta a todo sin poder parar, aunque afuera no pase
+                            nada grave. <br />
+                            Básicamente, es esa sensación de que te vas a perder en un mar
+                            de preocupaciones y que no sabes cómo salir.
+                        </p>
+                        <img src="/img/ansiedad.jpg" alt="ilustracion-ansiedad" />
+                    </article>
+                    <article id="bipolaridad" class="tarjeta-topico">
+                        <h3>Bipolaridad</h3>
+                        <p>
+                            La bipolaridad es como estar en una montaña rusa emocional, pero
+                            sin aviso. <br />
+                            Un momento estás on fire, súper feliz, lleno de energía, como si
+                            pudieras conquistar el mundo. <br />
+                            Pero en un abrir y cerrar de ojos, te bajas a un pozo donde todo
+                            te pesa, no tienes ganas de nada y te sientes vacío. <br />
+                            Es como si tus emociones cambiaran de extremo a extremo, sin
+                            control, y no es como si fuera un mal día o algo pasajero.
+                            <br />
+                            Puede durar días o semanas, y lo peor es que a veces ni tú sabes
+                            por qué pasó. Un minuto eres la persona más optimista, y al
+                            siguiente sientes que todo está en picada. <br />
+                            Es como estar atrapado en dos mundos totalmente diferentes, con
+                            la sensación de que el control se te escapa de las manos.
+                        </p>
+                        <img src="/img/bipolaridad.jpg" alt="ilustracion-bipolaridad" />
+                    </article>
+                    <article id="culpa" class="tarjeta-topico">
+                        <h3>Culpa</h3>
+                        <p>
+                            Ese sentimiento incómodo o pesado que aparece cuando sentimos
+                            que hicimos algo mal, especialmente si creemos que lastimamos a
+                            alguien o no actuamos como "deberíamos". Es como una vocecita
+                            interna que te dice: "Eso no estuvo bien".La culpa está muy
+                            ligada a nuestra conciencia moral y a nuestras normas internas
+                            —lo que creemos que es correcto o incorrecto. Puede servir como
+                            guía para corregir errores y aprender, pero si se vuelve muy
+                            intensa o constante, también puede afectar nuestra salud mental.
+                        </p>
+                        <img src="/img/culpa.jpg" alt="ilustracion-culpa" />
+                    </article>
+                    <article id="depresion" class="tarjeta-topico">
+                        <h3>Depresión</h3>
+                        <p>
+                            La depresión es como cuando todo te pesa, incluso cosas que
+                            antes te gustaban. Es sentirte apagado por dentro, como si te
+                            hubieran bajado el volumen emocional. No es solo estar triste un
+                            rato —es más como estar atrapado en una nube gris que no se va,
+                            sin importar lo que pase afuera. A veces no hay una razón clara,
+                            y otras veces sí, pero lo difícil es que te roba la energía, las
+                            ganas y hasta el sentido de las cosas. No es flojera ni drama:
+                            es una batalla interna que no siempre se nota desde fuera.
+                        </p>
+                        <img src="/img/depresion.jpg" alt="ilustracion-depresion" />
+                    </article>
+                    <article id="esquizofrenia" class="tarjeta-topico">
+                        <h3>Esquizofrenia</h3>
+                        <p>
+                            La esquizofrenia es como si tu mente empezara a mezclar la
+                            realidad con cosas que no están ahí, y no te das cuenta de
+                            inmediato. Es como si tu cerebro sintonizara varios canales al
+                            mismo tiempo: algunos reales, otros inventados, y a veces no
+                            sabes cuál es cuál. Puede haber voces que nadie más escucha,
+                            ideas raras que se sienten muy reales, o una desconexión con lo
+                            que pasa a tu alrededor.No es tener "doble personalidad", como
+                            muchos piensan, y no significa que alguien sea violento o
+                            peligroso. Es más bien una condición mental compleja que afecta
+                            cómo una persona piensa, siente y percibe el mundo.
+                        </p>
+                        <img src="/img/esquizofrenia.jpg" alt="ilustracion-esquizofrenia" />
+                    </article>
+                    <article id="fobia" class="tarjeta-topico">
+                        <h3>Fobia</h3>
+                        <p>
+                            Una fobia es cuando algo en particular —que puede parecer
+                            inofensivo o normal para otros— te da un miedo exagerado, casi
+                            automático, que no puedes controlar. Es como si tu cuerpo
+                            entrara en modo pánico aunque tu cabeza sepa que no hay peligro
+                            real. No es solo "no me gusta" o "me incomoda", es más como:
+                            "¡sáquenme de aquí ya!" Puede ser a cosas, lugares, animales,
+                            situaciones… desde arañas hasta hablar en público o volar en
+                            avión. La mente reacciona como si fuera una amenaza enorme,
+                            aunque racionalmente sabes que no lo es. Pero no por eso se
+                            siente menos real.
+                        </p>
+                        <img src="/img/fobia.jpg" alt="ilustracion-fobia" />
+                    </article>
+                    <article id="gaslighting" class="tarjeta-topico">
+                        <h3>Gaslighting</h3>
+                        <p>
+                            El gaslighting es cuando alguien te manipula para que empieces a
+                            dudar de ti mismo, de tus recuerdos, de lo que sentís o hasta de
+                            tu cordura. Es como si te dijeran cosas tipo “eso nunca pasó”,
+                            “estás exagerando” o “estás loco”, incluso cuando sabés que lo
+                            que viste o sentiste fue real. Es una forma sutil (o a veces no
+                            tan sutil) de hacerte sentir que el problema sos vos, cuando en
+                            realidad el otro te está torciendo la realidad. Puede pasar en
+                            relaciones de pareja, familia, trabajo… y lo peor es que muchas
+                            veces ni te das cuenta hasta que ya estás bastante metido.
+                        </p>
+                        <img src="/img/gaslighting.jpg" alt="ilustracion-gaslighting" />
+                    </article>
+                    <article id="hipocondria" class="tarjeta-topico">
+                        <h3>Hipocondría</h3>
+                        <p>
+                            La hipocondría es cuando estás convencido de que tenés alguna
+                            enfermedad seria, aunque los médicos te digan que está todo
+                            bien. Sentís algo mínimo —un dolorcito, un síntoma raro, un
+                            bultito— y tu cabeza ya está imaginando el peor escenario:
+                            “Seguro es cáncer”, “me voy a morir”, “¿y si es algo grave y
+                            nadie lo nota?”. No es que la persona quiera llamar la atención
+                            ni que esté inventando cosas, realmente lo siente así. Es una
+                            ansiedad fuerte enfocada en la salud, y puede hacer que vivas en
+                            modo alerta constante, escaneándote el cuerpo o googleando
+                            síntomas a cada rato (lo cual, spoiler: solo lo empeora).
+                        </p>
+                        <img src="/img/hipocondria.jpg" alt="ilustracion-hipocondria" />
+                    </article>
+                    <article id="inhibicion" class="tarjeta-topico">
+                        <h3>Inhibición</h3>
+                        <p>
+                            La inhibición es como tener un freno interno que no te deja
+                            hacer o decir lo que querés, aunque en el fondo tengas ganas. Es
+                            esa sensación de "mejor no hago nada, no vaya a ser que quede
+                            mal, me juzguen o meta la pata". Tu mente quiere avanzar, pero
+                            algo dentro tuyo dice "ni lo intentes". Puede pasar en
+                            situaciones sociales, sexuales, creativas… o básicamente en
+                            cualquier momento donde hay miedo al rechazo, al error o a
+                            exponerse. No es que no puedas, es que te bloqueás.
+                        </p>
+                        <img src="/img/inhibicion.jpg" alt="ilustracion-inhibicion" />
+                    </article>
+                    <article id="libido" class="tarjeta-topico">
+                        <h3>Libido</h3>
+                        <p>
+                            La líbido es básicamente tu energía o deseo sexual. Es como el
+                            “combustible” del impulso erótico, esas ganas de conectar, de
+                            tocar, de jugar o simplemente de tener sexo. Puede estar por las
+                            nubes o más bien en modo avión, y eso depende de mil cosas: el
+                            cuerpo, la mente, el estrés, el vínculo con el otro, etc. Pero
+                            ojo, no es solo físico —también tiene que ver con la fantasía,
+                            lo emocional, lo hormonal, incluso lo creativo. Freud, por
+                            ejemplo, decía que la líbido era como la fuerza vital que movía
+                            casi todo lo que hacemos (no solo sexo).
+                        </p>
+                        <img src="/img/libido.jpg" alt="ilustracion-libido" />
+                    </article>
+                    <article id="melancolia" class="tarjeta-topico">
+                        <h3>Melancolía</h3>
+                        <p>
+                            La melancolía es como esa sensación de estar atrapado en el
+                            pasado, mirando atrás y pensando en algo que ya se fue, ya sea
+                            un amor, un momento de tu vida o una experiencia que te marcó.
+                            Es como una tristeza profunda que te hace quedarte pegado a esos
+                            recuerdos, y muchas veces te hace sentir que todo lo bueno ya
+                            pasó. A veces, la melancolía te ayuda a pensar en tu vida y
+                            aprender de lo que has vivido, te ayuda a aceptar las cosas que
+                            ya no están. Pero si se vuelve algo constante, puede ser un
+                            problema. Es como si no pudieras dejar de darle vueltas a lo que
+                            ya no puedes cambiar, lo que te lleva a estar en un estado de
+                            tristeza que no se va. Eso hace que sea difícil disfrutar del
+                            presente, y te mete en un círculo de pensamientos que no te
+                            dejan avanzar.
+                        </p>
+                        <img src="/img/melancolia.jpg" alt="ilustracion-melancolia" />
+                    </article>
+                    <article id="neurosis" class="tarjeta-topico">
+                        <h3>Neurosis</h3>
+                        <p>
+                            La neurosis es cuando alguien se siente constantemente
+                            preocupado, ansioso o estresado por cosas que no son tan graves,
+                            pero que para esa persona se sienten como un gran problema. Es
+                            como tener una mente que no puede parar de dar vueltas a lo
+                            mismo, de pensar en lo peor, de dudar de todo y de tener miedos
+                            que a veces no tienen mucho sentido, pero igual te afectan. No
+                            llega a ser algo tan serio como un trastorno mental grave, pero
+                            sí puede afectar tu bienestar diario, como estar siempre al
+                            borde de la angustia sin saber muy bien por qué. Es más como una
+                            lucha interna constante.
+                        </p>
+                        <img src="/img/neurosis.jpg" alt="ilustracion-neurosis" />
+                    </article>
+                    <article id="obsesion" class="tarjeta-topico">
+                        <h3>Obsesión</h3>
+                        <p>
+                            La obsesión es cuando algo, ya sea un pensamiento, una idea o
+                            una acción, se te mete en la cabeza y no puedes dejar de darle
+                            vuelta. Es como si tu mente no pudiera apagar esa "musiquita"
+                            que se repite una y otra vez, sin importar cuánto intentes
+                            distraerte. A veces son ideas o miedos que no tienen mucho
+                            sentido, pero te ocupan el 100% de tu atención. Es como estar
+                            atrapado en una rueda de pensamientos que no se detiene, y
+                            aunque sabes que son irracionales, no puedes evitarlo.A veces
+                            las obsesiones se combinan con la necesidad de hacer cosas una y
+                            otra vez, de manera casi compulsiva, para "sentir que todo está
+                            bien" o para aliviar la ansiedad que esas obsesiones generan. Es
+                            como un ciclo en el que los pensamientos repetitivos
+                            (obsesiones) te llevan a realizar ciertos rituales o acciones
+                            (compulsiones), aunque muchas veces sabes que no tienen sentido.
+                        </p>
+                        <img src="/img/obsesion.jpg" alt="ilustracion-obsesion" />
+                    </article>
+                    <article id="psicosis" class="tarjeta-topico">
+                        <h3>Psicosis</h3>
+                        <p>
+                            La psicosis es cuando alguien pierde el contacto con la
+                            realidad, como si su mente empieza a inventar o distorsionar
+                            cosas que no están pasando. Puede ser escuchar voces que no
+                            están ahí, ver cosas que no existen o tener ideas muy raras
+                            sobre el mundo o sobre uno mismo, que no tienen sentido para los
+                            demás. Es como si el cerebro estuviera funcionando en un "modo"
+                            diferente, y lo que la persona percibe o cree no se ajusta a lo
+                            que realmente está ocurriendo. No siempre es algo que se note de
+                            inmediato, porque las personas con psicosis pueden parecer
+                            normales en muchos momentos, pero la desconexión con la realidad
+                            es lo que marca la diferencia.
+                        </p>
+                        <img src="/img/psicosis.jpg" alt="ilustracion-psicosis" />
+                    </article>
+                    <article id="resiliencia" class="tarjeta-topico">
+                        <h3>Resiliencia</h3>
+                        <p>
+                            La resiliencia es esa capacidad de levantarte después de una
+                            caída, de seguir adelante cuando las cosas se ponen duras. Es
+                            como tener un "superpoder" que te ayuda a enfrentar los
+                            problemas, las pérdidas o las dificultades sin quedarte
+                            estancado en ellos. No significa que no sientas el golpe, sino
+                            que sabes cómo adaptarte, aprender de lo que pasó y seguir tu
+                            camino, aunque sea paso a paso.Es como si la vida te diera un
+                            par de trompadas, pero tú encuentras la forma de salir con más
+                            fuerza, con más experiencia o simplemente con más paz interior.
+                            Es algo que todos tenemos, solo que a veces hay que "entrenarlo"
+                            para que salga en su mejor versión cuando más lo necesitas.
+                        </p>
+                        <img src="/img/resiliencia.jpg" alt="ilustracion-resiliencia" />
+                    </article>
+                    <article id="somatizacion" class="tarjeta-topico">
+                        <h3>Somatización</h3>
+                        <p>
+                            La somatización es cuando tu cuerpo empieza a expresar el
+                            estrés, la ansiedad o las emociones difíciles que no puedes o no
+                            quieres manejar con palabras. Es como si, en lugar de lidiar con
+                            esos sentimientos de manera emocional o mental, tu cuerpo los
+                            tradujera en síntomas físicos. Por ejemplo, podrías tener
+                            dolores de cabeza, molestias estomacales o fatiga extrema, pero
+                            cuando te revisan, no hay una causa médica clara. Lo que está
+                            pasando realmente es que tu cuerpo está reaccionando a lo que
+                            pasa en tu mente. Es como si el cuerpo dijera: "Si no puedes
+                            manejar esto emocionalmente, entonces te lo voy a mostrar
+                            físicamente."
+                        </p>
+                        <img src="/img/somatizacion.jpg" alt="ilustracion-somatizacion" />
+                    </article>
+                    <article id="trauma" class="tarjeta-topico">
+                        <h3>Trauma</h3>
+                        <p>
+                            El trauma es como una herida emocional profunda que queda
+                            después de vivir algo muy impactante o doloroso. Es cuando una
+                            experiencia muy fuerte, como un accidente, una pérdida
+                            importante, una agresión o algo que te sacudió profundamente,
+                            deja una marca en tu mente y emociones. Es como si el cerebro no
+                            pudiera "borrar" esa experiencia, y aunque pase el tiempo,
+                            ciertos recuerdos, sentimientos o situaciones pueden hacer que
+                            te vuelva esa sensación de malestar. A veces ni te das cuenta de
+                            lo mucho que afecta, hasta que te enfrentas a algo que te
+                            recuerda esa herida. El trauma puede afectar cómo ves el mundo,
+                            cómo te relacionas con los demás o incluso cómo te sientes
+                            contigo mismo.
+                        </p>
+                        <img src="/img/trauma.jpg" alt="ilustracion-trauma" />
+                    </article>
+                    <article id="violencia" class="tarjeta-topico">
+                        <h3>Violencia Psicológica</h3>
+                        <p>
+                            La violencia psicológica es cuando alguien te manipula, te
+                            controla o te hace sentir mal de manera constante con palabras,
+                            actitudes o comportamientos que afectan tu mente y emociones. No
+                            se ve de inmediato como una agresión física, pero puede ser
+                            igual de dañina, o incluso más, porque te hace dudar de ti
+                            mismo, te mina la autoestima o te hace sentir que no vales. Es
+                            como si te estuvieran minando mentalmente todo el tiempo, con
+                            comentarios despectivos, amenazas, críticas destructivas o
+                            aislándote de las personas que te importan. A veces se camufla
+                            bajo la excusa de "es por tu bien" o "es que te quiero", pero la
+                            realidad es que te deja emocionalmente roto. Este tipo de
+                            violencia puede hacerte sentir inseguro, ansioso o incluso como
+                            si nunca pudieras hacer las cosas bien. Reconocerla es el primer
+                            paso para salir de una relación tóxica y buscar apoyo.
+                        </p>
+                        <img src="/img/violencia.jpg" alt="ilustracion-violencia" />
+                    </article>
+                </div>
             </div>
-        </section>    
+        </section>
     </main>
     <footer>
         <a href="https://cohersion.blogspot.com/?m=1" target="_blank"><i class="bi bi-journals"></i>
@@ -241,5 +415,5 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>
