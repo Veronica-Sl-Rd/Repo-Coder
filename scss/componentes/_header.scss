@@ -1,0 +1,45 @@
+header {
+    height: 80px;
+    background: #ffffff;
+    background: linear-gradient(123deg, rgba(255, 255, 255, 1) 15%, rgba(94, 94, 94, 1) 59%, rgba(0, 0, 0, 1) 91%);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1100;
+
+    .logo {height: 80px;}
+
+    p {
+    margin-bottom: 0 !important;
+    color: black;
+    font-size: 40px;}
+
+    .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;}
+
+    .menu-hamburguesa-checkbox {
+    display: none;}
+
+    nav {
+        ul {
+            display: flex;
+            margin-bottom: 0 !important;
+            li {
+                a{
+                    color: wheat;
+                    padding: 10px;
+                    transition: 2s;
+                    &:hover {
+                        background-color: rgba(128, 128, 128, 0.515);
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+}

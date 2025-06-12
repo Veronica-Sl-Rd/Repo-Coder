@@ -1,0 +1,20 @@
+footer {
+    height: 80px !important;
+    background-image: url(../img/footer.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+
+    a {
+        margin-top: 1rem;
+        i {
+            font-size: 50px;
+            color: white;
+            transition: 1s;
+            &:hover {
+                color: aqua;}
+        }
+    }
+}
