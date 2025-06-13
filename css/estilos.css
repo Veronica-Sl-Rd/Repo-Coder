@@ -143,35 +143,68 @@ header nav ul li a:hover {
 .topicos .contenedor-general {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
 }
 .topicos .contenedor-general .contenedor-tarjetas {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  margin-top: 2em;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 .topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto {
-  background-color: rgba(0, 0, 0, 0.13);
-  border: 2px solid black;
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.714);
   width: 25%;
-  height: 20em;
+  height: 25em;
   margin: 2em;
   padding: 0.5em;
+  perspective: 1000px;
+}
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto:hover .tarjeta-inner {
+  transform: rotateY(180deg);
+}
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+}
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-front,
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-front {
+  background-color: white;
+  z-index: 2;
+}
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.13);
+  transform: rotateY(180deg);
+  border: 2px solid black;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.714);
+  padding: 1em;
 }
-.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto h3 {
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back h3 {
   margin-bottom: 0.5em;
   color: rgb(2, 19, 19);
   font-size: 25px;
 }
-.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto p {
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back p {
   color: black;
   margin-bottom: 1em;
   font-size: 18px !important;
@@ -180,7 +213,7 @@ header nav ul li a:hover {
   border-radius: 5px;
   box-shadow: 4px 4px 20px aquamarine;
 }
-.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto a {
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back a {
   color: white;
   background-color: black;
   width: 80%;
@@ -189,11 +222,14 @@ header nav ul li a:hover {
   padding: 2px;
   transition: 2s;
 }
-.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto a:hover {
+.topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back a:hover {
   background-color: aquamarine;
   color: black;
   border: 2px solid grey;
   width: 100%;
+}
+.topicos .contenedor-general .boton {
+  align-self: center;
 }
 
 .casos {
