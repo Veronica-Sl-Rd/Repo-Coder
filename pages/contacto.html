@@ -8,8 +8,9 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <!--Bootstrap Iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!--Magic Animations-->
+    <!--Animaciones-->
     <link rel="stylesheet" href="css/magic.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>>Contacto</title>
@@ -38,7 +39,6 @@
             <p>
                 Te ofrecemos dos opciones para contactarte con nosotros <br> y obtener la ayuda que estas necesitando.
             </p>
-            <img src="../img/avion.gif" alt="avion-de-papel">
         </section>
         <section class="contacto">
             <h2>
@@ -70,7 +70,7 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea class="input" name="mensaje" id="mensaje"></textarea>
                 </div>
-                <div>
+                <div class="enviar">
                     <input class="input" type="submit" value="Enviar">
                 </div> 
             </form>
@@ -84,40 +84,40 @@
                 y encarar una posible terapia o tratamiento según tu necesidad.
             </p>
             <div class="contenedor-tarjetas-psi">
-                <div class="tarjeta-psi">
+                <div class="tarjeta-psi" data-aos="zoom-out-right" data-aos-duration="1000">
                     <h3>
                         Profesional X
                     </h3>
                     <img src="../img/profesional-x.jpg" alt="profesional-x">
-                    <p>
+                    <p class="matricula">
                         Matrícula Nº12345
                     </p>
                     <p>
-                        <img src="../img/wp-logo.jpg" alt="wp-logo">1100112233
+                        <i class="bi bi-whatsapp"></i>1100112233
                     </p>
                 </div>
-                <div class="tarjeta-psi">
+                <div class="tarjeta-psi" data-aos="zoom-out" data-aos-duration="1000">
                     <h3>
                         Profesonal Y
                     </h3>
                     <img src="../img/profesional-y.jpg" alt="profesional-y">
-                    <p>
+                    <p class="matricula">
                         Matrícula Nº54321
                     </p>
                     <p>
-                        <img src="../img/wp-logo.jpg" alt="">1144556677
+                        <i class="bi bi-whatsapp"></i>1144556677
                     </p>
                 </div>
-                <div class="tarjeta-psi">
+                <div class="tarjeta-psi" data-aos="zoom-out-left" data-aos-duration="1000">
                     <h3>
                         Profesional Z
                     </h3>
                     <img src="../img/profesional-z.jpg" alt="profesional-z">
-                    <p>
+                    <p class="matricula">
                         Matrícula Nº09876
                     </p>
                     <p>
-                        <img src="../img/wp-logo.jpg" alt="">1188990011
+                        <i class="bi bi-whatsapp"></i>1188990011
                     </p>
                 </div>
             </div>
@@ -131,5 +131,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
