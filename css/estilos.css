@@ -129,7 +129,7 @@ header nav ul li a:hover {
 }
 .topicos {
   min-height: 650px;
-  background-image: url(/img/otro.gif);
+  background-image: url(../img/otro.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -457,7 +457,7 @@ header nav ul li a:hover {
 #testimonios {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   margin: 5px;
   height: 500px;
   text-align: center;
@@ -465,27 +465,33 @@ header nav ul li a:hover {
 }
 #testimonios h2 {
   color: black;
-  padding: 30px;
+  padding: 1rem;
+  margin-bottom: 0;
 }
 #testimonios p {
   font-size: 20px;
+  margin-bottom: 0;
 }
 #testimonios .formulario {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: baseline;
-  padding: 20px;
+  padding: 10px;
 }
 #testimonios .formulario label {
   font-size: 1.5rem;
-  text-decoration: solid;
+  font-weight: 700;
   margin: 10px;
 }
-#testimonios .formulario label #testimonio {
+#testimonios .formulario .input {
+  box-shadow: 4px 4px 10px aqua !important;
+}
+#testimonios .formulario textarea {
   width: 80%;
   height: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 2em;
+  box-shadow: 4px 4px 10px aqua;
 }
 
 .portada-contacto {
