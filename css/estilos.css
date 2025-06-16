@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+.contacto form .form-item .input, #testimonios .formulario textarea, #testimonios .formulario .input {
+  box-shadow: 4px 4px 10px aqua;
+}
+
 body {
   font-family: "Sansation", sans-serif;
 }
@@ -32,16 +36,15 @@ h2 {
 }
 
 .boton {
-  display: inline-block !important;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 .boton a {
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   font-size: 20px;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 20px;
   box-shadow: inset 0 0 4px white;
   padding: 10px 15px 10px 15px;
   transition: 1s;
@@ -83,13 +86,13 @@ header nav ul {
   margin-bottom: 0 !important;
 }
 header nav ul li a {
-  color: wheat;
+  color: white;
   padding: 10px;
   transition: 2s;
 }
 header nav ul li a:hover {
   background-color: rgba(128, 128, 128, 0.515);
-  transform: scale(1);
+  transform: scale(2);
 }
 
 .hero {
@@ -128,7 +131,7 @@ header nav ul li a:hover {
   }
 }
 .topicos {
-  min-height: 650px;
+  min-height: 6nth 2px, 4px, 5px, 10px, 15px, 20px, 30px, 40px, 50px, 500px, 9;
   background-image: url(../img/otro.gif);
   background-position: center;
   background-size: cover;
@@ -201,8 +204,8 @@ header nav ul li a:hover {
 }
 .topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back h3 {
   margin-bottom: 0.5em;
-  color: rgb(2, 19, 19);
-  font-size: 25px;
+  color: black;
+  font-size: 2nth 2px, 4px, 5px, 10px, 15px, 20px, 30px, 40px, 50px, 500px, 3;
 }
 .topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back p {
   color: black;
@@ -233,14 +236,14 @@ header nav ul li a:hover {
 }
 
 .casos {
-  height: auto;
+  height: 950px;
   background-image: url(../img/relojarena.png);
   background-position: right;
   background-size: auto;
   background-repeat: no-repeat;
 }
 .casos h2 {
-  background-color: gray;
+  background-color: grey;
   padding: 30px;
   text-align: center;
   margin-bottom: 0 !important;
@@ -248,7 +251,7 @@ header nav ul li a:hover {
 }
 .casos .bloque-casos-catarsis {
   width: 100% !important;
-  min-height: 650px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -261,18 +264,18 @@ header nav ul li a:hover {
   background-color: rgba(0, 255, 255, 0.344);
   width: 100%;
   padding: 25px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 1em;
 }
 .casos .bloque-casos-catarsis .carousel {
-  width: 70%;
-  margin-bottom: 20px;
+  width: 60%;
+  margin-bottom: 1em;
   align-self: flex-start;
-  margin-left: 20px;
+  margin-left: 40px;
   transition: 3s;
 }
 .casos .bloque-casos-catarsis .carousel:hover {
-  width: 80%;
+  width: 70%;
 }
 .casos .bloque-casos-catarsis .carousel .carousel-inner .carousel-caption {
   width: 100%;
@@ -280,12 +283,12 @@ header nav ul li a:hover {
 }
 .casos .bloque-casos-catarsis .carousel .carousel-inner .carousel-caption h5 {
   font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.407);
+  background-color: rgba(0, 0, 0, 0.479);
   margin-bottom: 0;
 }
 .casos .bloque-casos-catarsis .carousel .carousel-inner .carousel-caption p {
   font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.407);
+  background-color: rgba(0, 0, 0, 0.479);
 }
 
 .presentacion-topicos {
@@ -330,7 +333,7 @@ header nav ul li a:hover {
 }
 .grid-contenedor .lista h2 {
   color: white;
-  background-color: rgba(0, 0, 0, 0.56);
+  background-color: rgba(0, 0, 0, 0.479);
   font-size: 20px;
   text-align: center;
   padding: 4px;
@@ -344,11 +347,11 @@ header nav ul li a:hover {
   margin: 4px;
   padding-left: 15%;
   padding-right: 15%;
-  border: 2px solid gray;
-  background-color: rgba(0, 255, 255, 0.403);
+  border: 2px solid grey;
+  background-color: rgba(0, 255, 255, 0.344);
 }
 .grid-contenedor .lista ol li:hover {
-  background-color: rgba(146, 146, 146, 0.647);
+  background-color: grey;
   border-color: aqua;
 }
 .grid-contenedor .lista ol li a {
@@ -375,7 +378,7 @@ header nav ul li a:hover {
   text-transform: uppercase;
   width: 100%;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.348);
+  background-color: rgba(0, 0, 0, 0.479);
 }
 .descripcion .tarjeta-topico p {
   width: 100%;
@@ -417,14 +420,14 @@ header nav ul li a:hover {
   align-content: space-between;
 }
 .presentacion-casos div h2 {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   padding: 30px;
   text-align: center;
   box-shadow: inset 0 0 20px white;
   margin-bottom: 0;
 }
 .presentacion-casos div .bloques-videos {
-  height: 500px;
+  height: 30em;
   background: #ffffff;
   background: linear-gradient(88deg, rgb(255, 255, 255) 18%, rgb(166, 159, 159) 47%, rgb(186, 232, 232) 70%);
   display: flex;
@@ -434,24 +437,26 @@ header nav ul li a:hover {
 .presentacion-casos div .bloques-videos .contenido-video {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .presentacion-casos div .bloques-videos .contenido-video h3 {
-  font-size: 2em !important;
-  padding: 20px !important;
-  background-color: rgba(0, 255, 255, 0.374) !important;
+  font-size: 2em;
+  padding: 1em;
+  background-color: rgba(0, 255, 255, 0.344) !important;
+  width: 100%;
 }
 .presentacion-casos div .bloques-videos .contenido-video p {
   font-size: 1.5rem;
-  padding: 10px;
+  padding: 1rem;
 }
 .presentacion-casos div .bloques-videos .videos-casos {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.475);
+  background-color: rgba(255, 255, 255, 0.727);
   box-shadow: -5px -5px 20px rgb(68, 68, 68);
 }
 .presentacion-casos div .bloques-videos .videos-casos iframe {
-  height: 400px;
+  width: 40em;
+  height: 25em;
 }
 
 #testimonios {
@@ -471,6 +476,7 @@ header nav ul li a:hover {
 #testimonios p {
   font-size: 20px;
   margin-bottom: 0;
+  padding: 1rem;
 }
 #testimonios .formulario {
   display: flex;
@@ -484,14 +490,10 @@ header nav ul li a:hover {
   font-weight: 700;
   margin: 10px;
 }
-#testimonios .formulario .input {
-  box-shadow: 4px 4px 10px aqua !important;
-}
 #testimonios .formulario textarea {
   width: 80%;
   height: 60px;
   margin-bottom: 2em;
-  box-shadow: 4px 4px 10px aqua;
 }
 
 .portada-contacto {
@@ -501,24 +503,28 @@ header nav ul li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .portada-contacto h1 {
   color: black;
   font-weight: 800;
   text-shadow: 0 0 10px white;
-  margin-bottom: 5em;
-  margin-left: 20%;
-  margin-right: 20%;
-  background-color: rgba(0, 0, 0, 0.34);
+  background-color: rgba(0, 0, 0, 0.479);
   padding: 50px;
+  width: 100%;
+  text-align: left;
 }
 .portada-contacto p {
   color: white;
   font-size: 25px;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.397);
+  background-color: rgba(0, 255, 255, 0.344);
   padding: 35px;
+  width: 100%;
+  text-align: right;
 }
 
 .contacto {
@@ -538,21 +544,21 @@ header nav ul li a:hover {
 .contacto form .form-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
 }
 .contacto form .form-item:nth-child(5) textarea {
-  height: 80px;
-  width: 120%;
-  font-size: 15px;
+  height: 100px;
+  width: 100%;
+  font-size: 1nth 2px, 4px, 5px, 10px, 15px, 20px, 30px, 40px, 50px, 500px, 3;
 }
 .contacto form .form-item label {
   font-size: 1.5rem;
+  align-self: flex-start;
 }
 .contacto form .form-item .input {
   height: 30px;
-  width: 80%;
-  box-shadow: 4px 4px 10px aqua;
+  width: 100%;
 }
 .contacto form .enviar input {
   color: white;
@@ -579,7 +585,7 @@ header nav ul li a:hover {
 .ayuda h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.307);
+  background-color: rgba(0, 0, 0, 0.479);
   box-shadow: inset 0 0 20px white;
   padding: 50px;
   text-align: center;
@@ -594,7 +600,7 @@ header nav ul li a:hover {
   justify-content: space-evenly;
   align-items: center;
   margin: 2em;
-  border: 20px groove rgba(0, 0, 0, 0.545);
+  border: 20px groove rgba(0, 0, 0, 0.479);
 }
 .ayuda div .tarjeta-psi {
   width: 25%;
@@ -603,10 +609,10 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: 10px groove rgba(0, 0, 0, 0.545);
+  border: 10px groove rgba(0, 0, 0, 0.479);
 }
 .ayuda div .tarjeta-psi h3 {
-  font-size: 25px !important;
+  font-size: 2nth 2px, 4px, 5px, 10px, 15px, 20px, 30px, 40px, 50px, 500px, 3 !important;
   font-weight: 700 !important;
   text-align: center;
   background: #ffffff;
@@ -642,7 +648,7 @@ header nav ul li a:hover {
 }
 
 .portada-acerca-de {
-  height: 650px;
+  height: 100vh;
   background-image: url(../img/acerca-de-img.gif);
   background-position: center;
   background-size: cover;
@@ -681,10 +687,7 @@ footer {
   background-position: center;
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
-}
-footer a {
-  margin-top: 1rem !important;
+  align-items: center;
 }
 footer a i {
   font-size: 50px;
@@ -695,18 +698,91 @@ footer a i:hover {
   color: aqua;
 }
 
+@media screen and (max-width: 1446px) {
+  .contenido-video h3 {
+    font-size: 1.8rem !important;
+    padding: 0.5em !important;
+  }
+  .contenido-video p {
+    font-size: 1.5rem !important;
+    padding: 0.5rem !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .casos {
+    height: 750px;
+  }
+  .casos .bloque-casos-catarsis {
+    height: 650px;
+  }
+  .casos .bloque-casos-catarsis h3 {
+    margin-top: 0.5em;
+  }
+  .casos .bloque-casos-catarsis .carousel {
+    margin-top: 0;
+  }
+  .bloques-videos {
+    height: 50em !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    align-items: center;
+  }
+  .bloques-videos .contenido-video {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .contacto {
+    height: auto;
+  }
+  .contacto form {
+    gap: 5px !important;
+    margin-bottom: 1em;
+  }
+  .ayuda div {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .ayuda div .tarjeta-psi {
+    flex-direction: row;
+    width: 90%;
+    margin: 0.5em;
+  }
+  .ayuda div .tarjeta-psi h3 {
+    width: 20%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .contenedor-general .contenedor-tarjetas {
-    display: flex;
-    justify-content: center;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
   }
-  .contenedor-general .tarjeta-concepto {
-    margin: 1em;
-    min-height: initial;
-    width: 30%;
+  .contenedor-general .contenedor-tarjetas .tarjeta-concepto {
+    height: 30em !important;
+    width: 30% !important;
+    margin: 5px !important;
   }
   .contenedor-general .boton {
     margin-top: 5em;
+  }
+  .ayuda div .tarjeta-psi .matricula {
+    padding: 2px !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ayuda div .tarjeta-psi {
+    flex-wrap: wrap;
+  }
+  .ayuda div .tarjeta-psi h3 {
+    font-size: 1.2em;
+  }
+  .ayuda div .tarjeta-psi img {
+    width: 8em;
+    height: 8em;
+  }
+  .ayuda div .tarjeta-psi .matricula {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 917px) {
@@ -719,26 +795,25 @@ footer a i:hover {
   .topicos h2 {
     font-size: 1.5em;
   }
-  .topicos .contenedor-general .contenedor-tarjetas {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto {
-    margin: 0;
-  }
-  .topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto p {
-    font-size: 1em !important;
+  .casos {
+    background-image: none;
   }
   .casos h2 {
     font-size: 1.5em;
   }
   .casos .bloque-casos-catarsis {
     width: 100%;
-    margin-bottom: 1em;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+  .casos .bloque-casos-catarsis h3 {
+    margin: 0.5em;
   }
   .casos .bloque-casos-catarsis .carousel {
     width: 80%;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
+    margin-left: 0;
+    align-self: center;
   }
   .presentacion-topicos h1 {
     font-size: 2em;
@@ -773,12 +848,27 @@ footer a i:hover {
     margin-top: 10px;
     width: auto;
   }
+  .presentacion-casos div .bloques-videos .videos-casos {
+    width: 95%;
+    height: 50%;
+    padding: 10px;
+    margin-bottom: 1em;
+  }
+  .presentacion-casos div .bloques-videos .videos-casos iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
   .nosotros p {
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
 }
-@media screen and (max-width: 755px) {
+@media screen and (max-width: 917px) {
+  #testimonios {
+    height: auto;
+  }
+}
+@media screen and (max-width: 795px) {
   header {
     height: max-content;
   }
@@ -792,6 +882,7 @@ footer a i:hover {
     border: 1px solid rgb(75, 75, 75);
     box-shadow: inset 0 0 10px aqua;
     margin-left: auto;
+    margin-right: 6px !important;
   }
   header .menu-hamburguesa-checkbox:checked ~ nav ul {
     display: flex;
@@ -801,11 +892,11 @@ footer a i:hover {
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.666);
     position: absolute;
-    top: 70px;
+    top: 80px;
     right: 0;
-    width: 30%;
+    width: 10em;
     height: 300px;
-    text-align: center;
+    text-align: left;
   }
   header nav ul li {
     margin-top: 1em;
@@ -813,7 +904,7 @@ footer a i:hover {
   }
   header nav ul li a {
     color: black;
-    padding: 1em;
+    padding: 0.5em;
   }
   .topicos h2 {
     padding: 1em;
@@ -821,14 +912,18 @@ footer a i:hover {
   .contenedor-general .contenedor-tarjetas {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center !important;
   }
   .contenedor-general .contenedor-tarjetas .tarjeta-concepto {
-    margin: 1em;
+    margin: 0 auto !important;
     height: 40%;
-    width: 80%;
+    width: 80% !important;
   }
-  .contenedor-general .contenedor-tarjetas .boton {
+  .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back p {
+    padding: 4em !important;
+    text-align: center;
+  }
+  .contenedor-general .boton {
     margin-top: 2em;
     margin-bottom: 2em;
   }
@@ -851,6 +946,65 @@ footer a i:hover {
   .grid-contenedor .lista {
     display: none;
   }
+  .presentacion-casos div h2 {
+    font-size: 1.7em;
+    padding: 1rem;
+  }
+  .presentacion-casos div .bloques-videos .contenido-video h3 {
+    font-size: 1.5rem !important;
+  }
+  .presentacion-casos div .bloques-videos .contenido-video p {
+    font-size: 1.2rem !important;
+  }
+  .portada-contacto h1 {
+    font-size: 2em;
+  }
+  .portada-contacto p {
+    font-size: 1.2em;
+  }
+  .contacto form {
+    margin: 2em;
+  }
+  .contacto form label {
+    font-size: 1.2em !important;
+  }
+  .contacto form .enviar input {
+    margin-top: 5px !important;
+  }
+  .ayuda h2 {
+    font-size: 1.5em !important;
+  }
+  .ayuda p {
+    font-size: 1.2rem !important;
+  }
+  .ayuda div .tarjeta-psi {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 80%;
+  }
+  .ayuda div .tarjeta-psi h3 {
+    width: 100%;
+  }
+  .portada-acerca-de p {
+    margin: 10px 20px 10px 20px !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  header p {
+    font-size: 30px !important;
+  }
+  header nav ul {
+    width: 10rem;
+  }
+  .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-back p {
+    padding: 1em !important;
+  }
+  .casos .bloque-casos-catarsis {
+    justify-content: space-evenly;
+  }
+  .casos .bloque-casos-catarsis .carousel {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 460px) {
   header {
@@ -862,26 +1016,40 @@ footer a i:hover {
   header p {
     font-size: 20px !important;
   }
+  header nav ul {
+    top: 60px;
+    height: 200px;
+  }
+  header nav ul li {
+    margin: 0.5em;
+  }
+  footer {
+    height: 60px !important;
+  }
+  footer i {
+    font-size: 40px !important;
+  }
+  .portada-casos h1 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+  }
+  .portada-casos p {
+    font-size: 1.5em;
+  }
+  .contacto form {
+    margin-left: 5px !important;
+  }
+  .ayuda div {
+    margin: 0.5em !important;
+  }
+  .nosotros {
+    padding: 2em;
+  }
+  .nosotros p {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
-footer {
-  height: 60px;
-}
-footer a {
-  margin-top: 0.2em;
-  margin-bottom: 0.5em;
-}
-footer a i {
-  font-size: 40px;
-}
-
-.nosotros {
-  padding: 2em;
-}
-.nosotros p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 @media screen and (max-width: 400px) {
   .hero h1 {
     font-size: 1.5em;
@@ -894,6 +1062,15 @@ footer a i {
   }
   .presentacion-topicos p {
     font-size: 1.2em;
+  }
+  #testimonios h2 {
+    font-size: 1.5em;
+  }
+  #testimonios p {
+    font-size: 1em;
+  }
+  .contacto form .form-item {
+    width: 90%;
   }
   .portada-acerca-de h1 {
     font-size: 2em;

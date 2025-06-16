@@ -13,9 +13,9 @@ header {
 
     p {
     margin-bottom: 0 !important;
-    color: black;
+    color: $color-principal;
     text-shadow: 0 0 5px #0ff, 0 0 10px rgb(54, 115, 115), 0 0 20px #0ff;
-    font-size: 40px;}
+    font-size: nth($sizes, 8);}
 
     .menu-icon {
     display: none;
@@ -31,12 +31,12 @@ header {
             margin-bottom: 0 !important;
             li {
                 a{
-                    color: wheat;
-                    padding: 10px;
+                    color: $color-secundario;
+                    padding: nth($sizes, 4);
                     transition: 2s;
                     &:hover {
                         background-color: rgba(128, 128, 128, 0.515);
-                        transform: scale(1);
+                        transform: scale(2);
                     }
                 }
             }

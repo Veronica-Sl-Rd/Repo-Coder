@@ -5,16 +5,15 @@ footer {
     background-position: center;
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
 
     a {
-        margin-top: 1rem !important;
         i {
-            font-size: 50px;
-            color: white;
+            font-size: nth($sizes, 9);
+            color: $color-secundario;
             transition: 1s;
             &:hover {
-                color: aqua;}
+                color: nth($colores, 1);}
         }
     }
 }

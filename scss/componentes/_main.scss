@@ -8,22 +8,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include flex (flex, column, flex-start);
     align-items: normal;
 
     h1 {
-        background-color: rgba(0, 0, 0, 0.479);
-        padding: 20px;
+        background-color: nth($colores, 5);
+        padding: nth($sizes, 6);
         margin-bottom: 0 !important;
         animation: slidein 2s ease-in-out;
     }
 
     p {
         font-size: 35px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: nth($sizes, 6);
+        margin-right: nth($sizes, 6);
     }
 }
 
@@ -41,23 +39,21 @@
 
 //*Sección Tópicos
 .topicos {
-    min-height: 650px;
+    min-height: 6nth($sizes, 9);
     background-image: url(../img/otro.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     h2 {
-        background-color: black;
-        padding: 40px;
+        background-color: $color-principal;
+        padding: nth($sizes, 8);
         text-align: center;
-        box-shadow: inset 0 0 20px white;
+        box-shadow: inset 0 0 nth($sizes, 6) $color-secundario;
     }
 
     .contenedor-general {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flex (flex, column, space-evenly);
 
         .contenedor-tarjetas {
             display: flex;
@@ -91,60 +87,59 @@
                         width: 100%;
                         height: 100%;
                         backface-visibility: hidden;
-                        border-radius: 10px;
+                        border-radius: nth($sizes, 4);
                     }
 
                     .tarjeta-front {
-                        background-color: white;
+                        background-color: $color-secundario;
                         z-index: 2;
 
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            border-radius: 10px;
+                            border-radius: nth($sizes, 4);
                         }
                     }
 
                     .tarjeta-back {
-                        display: flex;
-                        flex-direction: column;justify-content: space-between;
+                        @include flex (flex, column, space-between);
                         align-items: center;
-                        background-color: rgba(0, 0, 0, 0.13);
+                        background-color: nth($colores, 6);
                         transform: rotateY(180deg);
-                        border: 2px solid black;
-                        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.714);
+                        border: nth($sizes, 1) solid $color-principal;
+                        box-shadow: nth($sizes, 2) nth($sizes, 2) nth($sizes, 6) nth($colores, 4);
                         padding: 1em;
 
                         h3 {
                             margin-bottom: 0.5em;
-                            color: rgb(2, 19, 19);
-                            font-size: 25px;
+                            color: $color-principal;
+                            font-size: 2nth($sizes, 3);
                         }
 
                         p {
-                            color: black;
+                            color: $color-principal;
                             margin-bottom: 1em;
                             font-size: 18px !important;
-                            background-color: white;
+                            background-color: $color-secundario;
                             padding: 0.5em;
-                            border-radius: 5px;
-                            box-shadow: 4px 4px 20px aquamarine;
+                            border-radius: nth($sizes, 3);
+                            box-shadow: nth($sizes, 2) nth($sizes, 2) nth($sizes, 6) nth($colores, 2);
                         }
 
                         a {
-                            color: white;
-                            background-color: black;
+                            color: $color-secundario;
+                            background-color: $color-principal;
                             width: 80%;
                             text-align: center;
-                            border-radius: 4px;
-                            padding: 2px;
+                            border-radius: nth($sizes, 2);
+                            padding: nth($sizes, 1);
                             transition: 2s;
 
                             &:hover {
-                                background-color: aquamarine;
-                                color: black;
-                                border: 2px solid grey;
+                                background-color: nth($colores, 2);
+                                color: $color-principal;
+                                border: nth($sizes, 1) solid $color-terciario;
                                 width: 100%;
                             }
                         }
@@ -161,47 +156,45 @@
 
 //*Sección Casos
 .casos {
-    height: auto;
+    height: 950px;
     background-image: url(../img/relojarena.png);
     background-position: right;
     background-size: auto;
     background-repeat: no-repeat;
 
     h2 {
-        background-color: gray;
-        padding: 30px;
+        background-color: $color-terciario;
+        padding: nth($sizes, 7);
         text-align: center;
         margin-bottom: 0 !important;
-        box-shadow: inset 0 0 20px white;
+        box-shadow: inset 0 0 nth($sizes, 6) $color-secundario;
     }
 
     .bloque-casos-catarsis {
         width: 100% !important;
-        min-height: 650px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        height: 750px;
+        @include flex (flex, column, space-between);
         align-items: center;
 
         h3 {
             font-size: 1.5em;
             font-style: italic;
             text-align: center;
-            background-color: rgba(0, 255, 255, 0.344);
+            background-color: nth($colores, 3);
             width: 100%;
             padding: 25px;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             margin-top: 1em;
         }
 
         .carousel {
-            width: 70%;
-            margin-bottom: 20px;
+            width: 60%;
+            margin-bottom: 1em;
             align-self: flex-start;
-            margin-left: 20px;
+            margin-left: nth($sizes, 8);
             transition: 3s;
             &:hover {
-                width: 80%;
+                width: 70%;
             }
 
             .carousel-inner {
@@ -211,14 +204,14 @@
 
                     h5 {
                         font-size: 2rem;
-                        background-color: rgba(0, 0, 0, 0.407);
+                        background-color: nth($colores, 5);
                         ;
                         margin-bottom: 0;
                     }
 
                     p {
                         font-size: 1.5rem;
-                        background-color: rgba(0, 0, 0, 0.407);
+                        background-color: nth($colores, 5);
                     }
                 }
             }
@@ -236,21 +229,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex (flex, column, center);
     text-align: center;
 
     h1 {
-        color: white;
-        font-size: 50px;
-        padding: 40px;
-        margin-bottom: 20px;
+        color: $color-secundario;
+        font-size: nth($sizes, 9);
+        padding: nth($sizes, 8);
+        margin-bottom: nth($sizes, 6);
     }
 
     p {
-        color: white;
-        font-size: 30px;
+        color: $color-secundario;
+        font-size: nth($sizes, 7);
     }
 }
 
@@ -265,43 +256,43 @@
 .grid-contenedor {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 20px;
+    gap: nth($sizes, 6);
     align-items: start;
 
     .lista {
         position: sticky;
         top: 80px;
-        background: white;
+        background: $color-secundario;
         height: fit-content !important;
-        padding: 4px;
+        padding: nth($sizes, 2);
 
         h2 {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.56);
-            font-size: 20px;
+            color: $color-secundario;
+            background-color: nth($colores, 5);
+            font-size: nth($sizes, 6);
             text-align: center;
-            padding: 4px;
-            margin-bottom: 4px;
+            padding: nth($sizes, 2);
+            margin-bottom: nth($sizes, 2);
         }
 
         ol {
-            padding: 4px;
+            padding: nth($sizes, 2);
             text-align: center;
 
             li {
-                margin: 4px;
+                margin: nth($sizes, 2);
                 padding-left: 15%;
                 padding-right: 15%;
-                border: 2px solid gray;
-                background-color: rgba(0, 255, 255, 0.403);
+                border: nth($sizes, 1) solid $color-terciario;
+                background-color: nth($colores, 3);
 
                 &:hover {
-                    background-color: rgba(146, 146, 146, 0.647);
-                    border-color: aqua;
+                    background-color: $color-terciario;
+                    border-color: nth($colores, 1);
                 }
 
                 a {
-                    color: black;
+                    color: $color-principal;
                 }
             }
         }
@@ -310,37 +301,33 @@
 
 //*Sección Descripción Tópicos
 .descripcion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex (flex, column, space-between);
     align-items: center;
-    padding: 20px;
+    padding: nth($sizes, 6);
 
     .tarjeta-topico {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex (flex, column, space-between);
         align-items: flex-start;
-        padding: 40px;
-        margin: 10px;
-        border: 1px solid grey;
+        padding: nth($sizes, 8);
+        margin: nth($sizes, 4);
+        border: 1px solid $color-terciario;
 
         h3 {
             text-transform: uppercase;
             width: 100%;
             padding: 15px;
-            background-color: rgba(0, 0, 0, 0.348);
+            background-color: nth($colores, 5);
         }
 
         p {
             width: 100%;
-            margin: 20px 0;
+            margin: nth($sizes, 6) 0;
             font-size: 18px;
         }
 
         img {
             width: 80%;
-            max-height: 500px;
+            max-height: nth($sizes, 10);
             align-self: center !important;
         }
     }
@@ -360,13 +347,13 @@
     flex-direction: column;
 
     h1 {
-        color: white;
-        font-size: 50px;
-        margin: 30px;
+        color: $color-secundario;
+        font-size: nth($sizes, 9);
+        margin: nth($sizes, 7);
     }
 
     p {
-        color: white;
+        color: $color-secundario;
         font-size: 35px;
     }
 }
@@ -374,22 +361,20 @@
 //*Sección Presentación Casos
 .presentacion-casos {
     min-height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+    @include flex (flex, column, stretch);
     align-content: space-between;
 
     div {
         h2 {
-            background-color: rgb(0, 0, 0);
-            padding: 30px;
+            background-color: $color-principal;
+            padding: nth($sizes, 7);
             text-align: center;
-            box-shadow: inset 0 0 20px white;
+            box-shadow: inset 0 0 nth($sizes, 6) $color-secundario;
             margin-bottom: 0;
         }
 
         .bloques-videos {
-            height: 500px;
+            height: 30em;
             background: #ffffff;
             background: linear-gradient(88deg, rgba(255, 255, 255, 1) 18%, rgba(166, 159, 159, 1) 47%, rgba(186, 232, 232, 1) 70%);
             display: flex;
@@ -397,29 +382,29 @@
             align-items: center;
 
             .contenido-video {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
+                @include flex (flex, column, space-between);
 
                 h3 {
-                    font-size: 2em !important;
-                    padding: 20px !important;
-                    background-color: rgba(0, 255, 255, 0.374) !important;
+                    font-size: 2em;
+                    padding: 1em;
+                    background-color: nth($colores, 3) !important;
+                    width: 100%;
                 }
 
                 p {
                     font-size: 1.5rem;
-                    padding: 10px;
+                    padding: 1rem;
                 }
             }
 
             .videos-casos {
-                padding: 20px;
-                background-color: rgba(255, 255, 255, 0.475);
+                padding: nth($sizes, 6);
+                background-color: rgba(255, 255, 255, 0.727);
                 box-shadow: -5px -5px 20px rgb(68, 68, 68);
 
                 iframe {
-                    height: 400px;
+                    width: 40em;
+                    height: 25em;
                 }
             }
         }
@@ -428,45 +413,42 @@
 
 //*Sección Testimonios
 #testimonios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 5px;
-    height: 500px;
+    @include flex (flex, column, center);
+    margin: nth($sizes, 3);
+    height: nth($sizes, 10);
     text-align: center;
-    border: 10px solid black;
+    border: nth($sizes, 4) solid $color-principal;
 
     h2 {
-        color: black;
+        color: $color-principal;
         padding: 1rem;
         margin-bottom: 0;
     }
 
     p {
-        font-size: 20px;
+        font-size: nth($sizes, 6);
         margin-bottom: 0;
+        padding: 1rem;
     }
 
     .formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flex (flex, column, space-evenly);
         align-items: baseline;
-        padding: 10px;
+        padding: nth($sizes, 4);
 
         label {
             font-size: 1.5rem;
             font-weight: 700;
-            margin: 10px;}
+            margin: nth($sizes, 4);}
 
         .input {
-            box-shadow: 4px 4px 10px aqua !important;}
+            @extend %input;}
 
         textarea {
             width: 80%;
             height: 60px;
             margin-bottom: 2em;
-            box-shadow: 4px 4px 10px aqua;}
+            @extend %input;}
     }
 }
 
@@ -480,75 +462,78 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    text-align: center;
+    @include flex (flex, column, space-evenly);
+    align-items: center;
 
     h1 {
-        color: black;
+        color: $color-principal;
         font-weight: 800;
-        text-shadow: 0 0 10px white;
-        margin-bottom: 5em;
-        margin-left: 20%;
-        margin-right: 20%;
-        background-color: rgba(0, 0, 0, 0.34);
-        padding: 50px;
+        text-shadow: 0 0 nth($sizes, 4) $color-secundario;
+        background-color: nth($colores, 5);
+        padding: nth($sizes, 9);
+        width: 100%;
+        text-align: left;
     }
 
     p {
-        color: white;
+        color: $color-secundario;
         font-size: 25px;
         text-transform: uppercase;
-        background-color: rgba(0, 0, 0, 0.397);
+        background-color: nth($colores, 3);
         padding: 35px;
+        width: 100%;
+        text-align: right;
     }
 }
 
 //*Sección Contacto
 .contacto {
-    height: 500px;
+    height: nth($sizes, 10);
     text-align: center;
 
     h2 {
-        color: black;
-        font-size: 30px;
-        padding: 40px;}
+        color: $color-principal;
+        font-size: nth($sizes, 7);
+        padding: nth($sizes, 8);}
 
     form {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 30px;
+        gap: nth($sizes, 7);
 
         .form-item {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            padding: 20px;
+            align-items: center;
+            padding: nth($sizes, 6);
             &:nth-child(5) {
                 textarea {
-                height: 80px;
-                width: 120%;
-                font-size: 15px;
+                height: 100px;
+                width: 100%;
+                font-size: 1nth($sizes, 3);
                 }}
 
             label {
-                font-size: 1.5rem;}
+                font-size: 1.5rem;
+                align-self: flex-start;}
 
             .input {
-                height: 30px;
-                width: 80%;
-                box-shadow: 4px 4px 10px aqua;
+                height: nth($sizes, 7);
+                width: 100%;
+                @extend %input;
                 }}
         .enviar {
             input {
-                color: white;
+                color: $color-secundario;
                 padding: 0.5em 2em 0.5em 2em;
-                background-color: black;
-                border: 2px solid grey;
-                border-radius: 10px;
-                box-shadow: 5px 5px 10px black;
+                background-color: $color-principal;
+                border: nth($sizes, 1) solid $color-terciario;
+                border-radius: nth($sizes, 4);
+                box-shadow: nth($sizes, 3) nth($sizes, 3) nth($sizes, 4) $color-principal;
                 margin-top: 5em;
                 transition: 2s;
                 &:hover {
-                    background-color: grey;
+                    background-color: $color-terciario;
                     padding: 0.5em 4em 0.5em 4em;
                 }
             }
@@ -566,17 +551,17 @@
     background-repeat: no-repeat;
 
     h2 {
-        font-size: 30px;
-        margin-bottom: 20px;
-        background-color: rgba(0, 0, 0, 0.307);
-        box-shadow: inset 0 0 20px white;
-        padding: 50px;
+        font-size: nth($sizes, 7);
+        margin-bottom: nth($sizes, 6);
+        background-color: nth($colores, 5);
+        box-shadow: inset 0 0 nth($sizes, 6) $color-secundario;
+        padding: nth($sizes, 9);
         text-align: center;
     }
 
     p {
         font-size: 25px;
-        margin-bottom: 20px;
+        margin-bottom: nth($sizes, 6);
         text-align: center;
     }
 
@@ -585,44 +570,42 @@
         justify-content: space-evenly;
         align-items: center;
         margin: 2em;
-        border: 20px groove rgba(0, 0, 0, 0.545);
+        border: nth($sizes, 6) groove nth($colores, 5);
 
         .tarjeta-psi {
             width: 25%;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            background-color: $color-secundario;
+            @include flex (flex, column, space-evenly);
             align-items: center;
-            border: 10px groove rgba(0, 0, 0, 0.545);
+            border: nth($sizes, 4) groove nth($colores, 5);
 ;
 
             h3 {
-                font-size: 25px !important;
+                font-size: 2nth($sizes, 3) !important;
                 font-weight: 700 !important;
                 text-align: center;
                 background: #ffffff;
                 background: linear-gradient(88deg, rgba(255, 255, 255, 1) 18%, rgba(166, 159, 159, 1) 47%, rgba(186, 232, 232, 1) 70%);
                 padding: 1rem;
                 width: 100%;
-                text-shadow: 5px 5px 10px black
+                text-shadow: nth($sizes, 3) nth($sizes, 3) nth($sizes, 4) $color-principal
             }
 
             img {
-                margin: 10px;
-                border-radius: 5px;
-                box-shadow: 4px 4px 10px black;
+                margin: nth($sizes, 4);
+                border-radius: nth($sizes, 3);
+                box-shadow: nth($sizes, 2) nth($sizes, 2) nth($sizes, 4) $color-principal;
             }
 
             .matricula {
                 margin-top: 1em;
                 padding: 0.5rem 3rem 0.5rem 3rem;
-                border: 5px solid aqua;
-                border-radius: 10px;
+                border: nth($sizes, 3) solid nth($colores, 1);
+                border-radius: nth($sizes, 4);
             }
 
             p {
-                font-size: 20px;
+                font-size: nth($sizes, 6);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -632,7 +615,7 @@
                     margin-right: 1rem;
                     transition: 1.5s;
                     &:hover {
-                        color: aqua;
+                        color: nth($colores, 1);
                     }
                 }
             }
@@ -643,7 +626,7 @@
 //*----ACERCA DE----
 //*Sección Poratada Acerca De
 .portada-acerca-de {
-    height: 650px;
+    height: 100vh;
     background-image: url(../img/acerca-de-img.gif);
     background-position: center;
     background-size: cover;
@@ -657,8 +640,8 @@
 
     p {
         font-size: 1.5em;
-        color: white;
-        margin-top: 5px;
+        color: $color-secundario;
+        margin-top: nth($sizes, 3);
     }
 }
 
@@ -669,12 +652,12 @@
     padding: 80px;
 
     h2 {
-        background-color: aqua;
-        color: black;
+        background-color: nth($colores, 1);
+        color: $color-principal;
     }
 
     p {
-        font-size: 20px;
+        font-size: nth($sizes, 6);
         margin-left: 8em;
         margin-right: 8em;
     }

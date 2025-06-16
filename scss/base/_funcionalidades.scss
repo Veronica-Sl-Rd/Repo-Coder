@@ -1,0 +1,20 @@
+//* VARIABLES :: se llaman con $variable
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: grey;
+
+//*? LISTAS :: se llaman con nth($colores, valor)
+$colores: aqua, aquamarine, rgba(0, 255, 255, 0.344), rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.13);
+$sizes: 2px, 4px, 5px, 10px, 15px, 20px, 30px, 40px, 50px, 500px;
+
+//*!ENTENDS
+%input {
+    box-shadow: nth($sizes, 2) nth($sizes, 2) nth($sizes, 4) nth($colores, 1);
+}
+
+//* MIXINS
+@mixin flex ($flex, $direction, $justify) {
+    display: $flex; 
+    flex-direction: $direction;
+    justify-content: $justify;
+}
