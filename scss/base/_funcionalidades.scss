@@ -7,7 +7,7 @@ $color-terciario: grey;
 $colores: aqua, aquamarine, rgba(0, 255, 255, 0.344), rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.13);
 $sizes: 2px, 4px, 5px, 10px, 15px, 20px, 30px, 40px, 50px, 500px;
 
-//*!ENTENDS
+//*!EXTENDS
 %input {
     box-shadow: nth($sizes, 2) nth($sizes, 2) nth($sizes, 4) nth($colores, 1);
 }
