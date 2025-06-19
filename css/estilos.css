@@ -927,6 +927,12 @@ footer a i:hover {
     margin-top: 2em;
     margin-bottom: 2em;
   }
+  .carousel .carousel-inner .carousel-caption h5 {
+    font-size: 1.5rem !important;
+  }
+  .carousel .carousel-inner .carousel-caption p {
+    font-size: 1rem !important;
+  }
   .explorador-topicos .dropdown-contenedor {
     display: flex;
     justify-content: center;
@@ -1037,7 +1043,12 @@ footer a i:hover {
     font-size: 1.5em;
   }
   .contacto form {
-    margin-left: 5px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacto form .form-item {
+    width: 100%;
   }
   .ayuda div {
     margin: 0.5em !important;
@@ -1068,9 +1079,6 @@ footer a i:hover {
   }
   #testimonios p {
     font-size: 1em;
-  }
-  .contacto form .form-item {
-    width: 90%;
   }
   .portada-acerca-de h1 {
     font-size: 2em;

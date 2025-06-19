@@ -320,6 +320,19 @@
             margin-bottom: 2em;
         }
     }
+    .carousel {
+        .carousel-inner {
+            .carousel-caption {
+                h5 {
+                    font-size: 1.5rem !important;
+                }
+                p {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    }
+    
 
     //*Topicos
     .explorador-topicos {
@@ -493,10 +506,15 @@
         }
     }
 
-    //Contacto
+    //*Contacto
     .contacto {
         form {
-            margin-left: 5px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .form-item {
+                width: 100%;
+            }
         }
     }
     .ayuda {
@@ -543,15 +561,6 @@
         }
         p {
             font-size: 1em;
-        }
-    }
-
-    //*Contacto
-    .contacto {
-        form {
-            .form-item {
-                width: 90%;
-            }
         }
     }
 
