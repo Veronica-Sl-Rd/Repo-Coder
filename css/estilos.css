@@ -132,7 +132,7 @@ header nav ul li a:hover {
 }
 .topicos {
   min-height: 6nth 2px, 4px, 5px, 10px, 15px, 20px, 30px, 40px, 50px, 500px, 9;
-  background-image: url(../img/otro.gif);
+  background-image: url(../img/fondo-tarjetas.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ header nav ul li a:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 1s ease;
+  transition: transform 2s ease;
   transform-style: preserve-3d;
 }
 .topicos .contenedor-general .contenedor-tarjetas .tarjeta-concepto .tarjeta-inner .tarjeta-front,
@@ -237,13 +237,10 @@ header nav ul li a:hover {
 
 .casos {
   height: 950px;
-  background-image: url(../img/relojarena.png);
-  background-position: right;
-  background-size: auto;
-  background-repeat: no-repeat;
+  background: radial-gradient(circle, rgb(225, 225, 225), rgb(166, 159, 159), rgb(82, 229, 229));
 }
 .casos h2 {
-  background-color: grey;
+  background-color: black;
   padding: 30px;
   text-align: center;
   margin-bottom: 0 !important;
@@ -270,12 +267,12 @@ header nav ul li a:hover {
 .casos .bloque-casos-catarsis .carousel {
   width: 60%;
   margin-bottom: 1em;
-  align-self: flex-start;
+  align-self: center;
   margin-left: 40px;
-  transition: 3s;
+  transition: transform 3s ease;
 }
 .casos .bloque-casos-catarsis .carousel:hover {
-  width: 70%;
+  transform: scaleX(1.2);
 }
 .casos .bloque-casos-catarsis .carousel .carousel-inner .carousel-caption {
   width: 100%;
@@ -413,7 +410,7 @@ header nav ul li a:hover {
 }
 
 .presentacion-casos {
-  min-height: 1000px;
+  min-height: 2000px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -498,7 +495,7 @@ header nav ul li a:hover {
 
 .portada-contacto {
   height: 100vh;
-  background: linear-gradient(rgba(142, 142, 142, 0.671), rgba(33, 33, 33, 0.6)), url(../img/topicos-img.gif);
+  background: linear-gradient(rgba(142, 142, 142, 0.671), rgba(33, 33, 33, 0.6)), url(../img/contacto.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -795,9 +792,6 @@ footer a i:hover {
   .topicos h2 {
     font-size: 1.5em;
   }
-  .casos {
-    background-image: none;
-  }
   .casos h2 {
     font-size: 1.5em;
   }
@@ -810,10 +804,9 @@ footer a i:hover {
     margin: 0.5em;
   }
   .casos .bloque-casos-catarsis .carousel {
-    width: 80%;
+    width: 70%;
     margin-bottom: 0.2em;
     margin-left: 0;
-    align-self: center;
   }
   .presentacion-topicos h1 {
     font-size: 2em;
@@ -924,8 +917,14 @@ footer a i:hover {
     text-align: center;
   }
   .contenedor-general .boton {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .carousel {
+    width: 80%;
+  }
+  .carousel:hover {
+    transform: scaleY(1.2) !important;
   }
   .carousel .carousel-inner .carousel-caption h5 {
     font-size: 1.5rem !important;
@@ -1006,10 +1005,10 @@ footer a i:hover {
     padding: 1em !important;
   }
   .casos .bloque-casos-catarsis {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .casos .bloque-casos-catarsis .carousel {
-    width: 90%;
+    width: 85% !important;
   }
 }
 @media screen and (max-width: 460px) {

@@ -139,7 +139,6 @@
     }
 
     .casos {
-        background-image: none;
         h2 {
             font-size: 1.5em;
         }
@@ -153,10 +152,9 @@
             }
 
             .carousel {
-                width: 80%;
+                width: 70%;
                 margin-bottom: 0.2em;
                 margin-left: 0;
-                align-self: center;
             }
         }
     }
@@ -316,11 +314,16 @@
         }
 
         .boton {
-            margin-top: 2em;
-            margin-bottom: 2em;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
     }
+
     .carousel {
+        width: 80%;
+        &:hover {
+            transform: scaleY(1.2) !important;
+        }
         .carousel-inner {
             .carousel-caption {
                 h5 {
@@ -332,7 +335,7 @@
             }
         }
     }
-    
+
 
     //*Topicos
     .explorador-topicos {
@@ -457,9 +460,9 @@
     }
     .casos {
         .bloque-casos-catarsis {
-            justify-content: space-evenly;
+            justify-content: space-between;
             .carousel {
-                width: 90%;
+                width: 85% !important;
             }
         }
     }
