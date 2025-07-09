@@ -1,7 +1,7 @@
 <h1 align="center">Hola 👋, Soy Verónica Rodriguez</h1>
 <h3 align="center">Una entusiasta estudiante de Full Stack Developer dando sus primeros pasos</h3>
 
-- 🌱 Me encuentro estudiando [Desarrollo Web, Java SC y Backend en](www.coderhouse.com.ar)
+- 🌱 Me encuentro estudiando [Desarrollo Web, Java SC y Backend en CODERHOUSE](https://www.coderhouse.com)
 
 - 📄 ¿Qué aprendi hasta ahora? **A estructurar un proyecto desde cero, utilizando tecnologías del frontend como HTML5, CSS3, SASS, y diseño responsive con Flexbox y Grid. También practico el uso de Git y GitHub para el control de versiones.**
 
@@ -13,7 +13,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/linkedin.com/in/verónica-rodriguez-psi" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/verónica-rodriguez-psi" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/verónica-rodriguez-psi" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin.com/in/verónica-rodriguez-psi" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
